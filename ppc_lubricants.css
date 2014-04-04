@@ -3,17 +3,20 @@
 	padding: 0;
 }
 div {
-	border: 1px solid red;
 	font-family: arial;
 }
-#container {
-	width: 1200px;
-	position: absolute;
-	background-color: #282828;
+p{
+	padding: 0 15px;
 
 }
+#container {
+	width: inherit;
+	position: absolute;
+	background: linear-gradient(to right, black, #505050, black);
+}
 #header {
-	background-color: #F8F8F8;
+	background-color: #F0F0F0;
+	margin-bottom: 15px;
 }
 #header p{
 	text-align: right;
@@ -25,85 +28,91 @@ div {
 #header nav{
 	background-color: #F0F0F0;
 	margin-bottom: 20px;
-	left: 40px;
-	padding: 10px 10px;
-	text-align: center;
+	padding-left: 40px;
+	padding-bottom: 1px;
+	border-top: 2px solid #C8C8C8;	
 }
 #header nav a{
-	padding: 10px 10px;
+	padding: 5px 10px;
 	text-decoration: none;
 	border-left: 2px solid #C8C8C8;
-	font-size: 12px;
+	font-size: 10px;
 	font-weight: bold;
 	color: #888888;
-	margin-left: 40px;
-
-
+	margin-left: auto;
+	text-align: center;
+	display: inline-block;
 }
 h2 {
 	background-color: gold;
 	padding: 4px 8px; 
-	font-size: 16px;
-}
-#header nav a:n-thchild(7){
-	border-right: 2px solid #C8C8C8;
+	font-size: 14px;
 }
 #warehouse-pic{
 	border: 4px solid white;
 	display: inline-block;
 	vertical-align: top;
-	margin: 10px;
+	margin: 10px 5px 0 50px;
 }
 #about-ppc{
 	display: inline-block;
-	width: 650px;
+	width: 620px;
 	vertical-align: top;
 	margin-top: 10px;
 	color: white;
-	background-color: #787878;
-
+	background: linear-gradient(to right, grey, black); /* Standard syntax (must be last) */
+	height: 225px;
 }
 #about-ppc p{
-	padding: 10px;
-
+	padding: 10px 15px;
+	font-size: 12px;
 }
 #about-ppc h2 {
 	color: black;
+	padding: 7px 15px;
+	font-size: 14px;
 }
 #about-ppc h3{
-	padding-top: 10px;
+	padding: 10px 15px;
+	font-size: 14px;
 }
 #center-txt{
-	margin: 10px;
-}
-#center-yellow {
+	margin: 10px 65px;
+	font-size: 12px;
 	color: gold;
 }
-#automotive, #commercial, #industrial, #diesel {
+.bottom-div {
 	width: 220px;
 	display: inline-block;
 	vertical-align: top;
-	margin: 10px;
 	background-color: white;
+	height: 333px;
+	position: relative;
+	border: 2px solid black;
+	margin: 0 9px;
+	font-size: 12px;
 }
-/*#automotive, #commercial, #industrial, #diesel img{
-	width: 276px;
+#automotive{
+	margin-left: 48px;
+}
+.bottom-div p{
+	padding-top: 10px;
+	font-size: 12px;
+}
+.bottom-div img{
+	width: 220px;
 	height: 155px;
+}
 
-}*/
-#automotive img{
-	width: 220px;
-	height: 155px;
+.rm {
+	background-color: gold;
+	border: 3px solid black;
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #484848;
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	border-radius: 5px;
 }
-#commercial img{
-	width: 220px;
-	height: 155px;
-}
-#industrial img{
-	width: 220px;
-	height: 155px;
-}
-#diesel img{
-	width: 220px;
-	height: 155px;
-}
+
